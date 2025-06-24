@@ -175,31 +175,34 @@ $(document).ready(function($) {
     });
     
     
-    
-    $('.testimonials-carousel').owlCarousel({
-        loop: false,
-        dots:true,
-        margin: 0,
-        nav: false,
-        margin:20,
-        smartSpeed: 500,
-        autoHeight: true,
-        autoplay: false,
-        autoplayTimeout: 10000,
-
+    // Testimonials carousel
+    $(".testimonial-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        center: true,
+        dots: false,
+        loop: true,
+        nav : true,
+        navText : [
+            '<i class="fas fa-chevron-left"></i>',
+            '<i class="fas fa-chevron-right"></i>'
+        ],
         responsive: {
-            0: {
-                items: 1
+            0:{
+                items:1
             },
-            600: {
-                items: 1
+            576:{
+                items:1
             },
-            1024: {
-                items: 1
+            768:{
+                items:2
             },
+            992:{
+                items:3
+            }
         }
     });
-    
+
 	//Accordion Box
 	if ($('.accordion-box').length) {
 		$(".accordion-box").on('click', '.acc-btn', function () {
