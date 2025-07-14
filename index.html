@@ -2,33 +2,52 @@
 <html lang="en">
 
 <head>
-    <title>Insurance</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Insurance">
     <meta name="description" content="Insurance">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- FavIcon CSS -->
-    <link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="16x16">
-    <!--Google Fonts CSS-->
+
+    <title>Insurance</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
+
+    <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <!--Font Awesome Icon CSS-->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!--Bootstrap CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <!-- Carousel Slider CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/backtotop.css">
-    <!-- Main Style CSS  -->
-    <link rel="stylesheet" type="text/css" href="assets/css/meanmenu.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
 
+    <!-- Google Fonts: Inter (Preload with fallback) -->
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+    </noscript>
+
+    <!-- Font Awesome (Async load with fallback) -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+
+    <!-- Bootstrap CSS (Preloaded with fallback) -->
+    <link rel="preload" as="style" href="assets/css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    </noscript>
+
+    <!-- Plugin CSS (Critical-first order) -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/backtotop.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!-- Main Stylesheet (loaded last for custom overrides) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 <body>
     <!-- preloader start -->
     <div id="preloader">
