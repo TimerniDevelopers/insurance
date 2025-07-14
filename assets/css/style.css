@@ -44,9 +44,9 @@ Template Name: Insurance -  HTML Template
   *::before,
   *::after {
     /* -webkit-transition: all 0.3s ease 0s !important;
-    -moz-transition: all 0.3s ease 0s !important;
-    -ms-transition: all 0.3s ease 0s !important;
-    -o-transition: all 0.3s ease 0s !important; */
+      -moz-transition: all 0.3s ease 0s !important;
+      -ms-transition: all 0.3s ease 0s !important;
+      -o-transition: all 0.3s ease 0s !important; */
     transition: all 0.3s ease 0s !important;
     border: none;
   }
@@ -1045,19 +1045,21 @@ Template Name: Insurance -  HTML Template
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
   }
   @keyframes ripple {
     0% {
-      -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3), 0 0 0 5px rgba(255, 255, 255, 0.3), 0 0 0 10px rgba(255, 255, 255, 0.3);
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3),
+        0 0 0 5px rgba(255, 255, 255, 0.3), 0 0 0 10px rgba(255, 255, 255, 0.3);
       box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3),
         0 0 0 5px rgba(255, 255, 255, 0.3), 0 0 0 10px rgba(255, 255, 255, 0.3);
     }
   
     100% {
-      -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3), 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0);
+      -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3),
+        0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0);
       box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3),
         0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(241, 42, 2, 0);
     }
@@ -1066,7 +1068,7 @@ Template Name: Insurance -  HTML Template
   .truncate-2-custom,
   .truncate-3-custom {
     display: box;
-    display: -webkit-box; 
+    display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -1520,12 +1522,7 @@ Template Name: Insurance -  HTML Template
     visibility: hidden;
     transition: all 0.3s ease-out;
   }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-btn {
-      margin-top: 0;
-      margin-right: 40px;
-    }
-  }
+  
   /* Mobile Menu  */
   
   .mean-container .mean-bar {
@@ -1662,32 +1659,6 @@ Template Name: Insurance -  HTML Template
     }
   }
   
-  @media only screen and (min-width: 320px) and (max-width: 991px) {
-    .menu-area-two {
-      background: #121121;
-      padding: 15px 0px;
-    }
-    .info-toggle-btn.sidebar-toggle-btn {
-      top: 0px;
-    }
-    .header-transparent .header-btn {
-      margin-top: 0px;
-    }
-  }
-  @media only screen and (min-width: 991px) and (max-width: 1199px) {
-    .header-btn {
-      margin-right: 25px;
-    }
-  
-    .main-menu ul li {
-      display: inline-block;
-      margin-left: 20px;
-      position: relative;
-    }
-    .menu-area .s-btn {
-      padding: 15px 25px;
-    }
-  }
   .logo-img {
     max-width: 120px;
     margin: 10px 0px;
@@ -1736,9 +1707,9 @@ Template Name: Insurance -  HTML Template
     z-index: 11;
   }
   /* [class*=slider-one__slider-] {
-      padding-top: 322px;
-      padding-bottom: 245px;
-  } */
+        padding-top: 322px;
+        padding-bottom: 245px;
+    } */
   .banner-item:before {
     content: "";
     position: absolute;
@@ -1876,15 +1847,15 @@ Template Name: Insurance -  HTML Template
     color: var(--theme-color1);
   }
   /* .tab-abs-img {
-      position: absolute;
-      left: 50%;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      display: inline-block;
-      transform: translate(-50%, -50%);
-  } */
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: inline-block;
+        transform: translate(-50%, -50%);
+    } */
   
   /* service  */
   .service-item {
@@ -2176,18 +2147,18 @@ Template Name: Insurance -  HTML Template
     margin: auto;
   }
   /* .brand-img img {
-      filter: grayscale(90%);
-      opacity: 0.7;
-      transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
-      -webkit-filter: grayscale(90%);
-  }
-  .brand-img:hover img {
-      filter: grayscale(0%);
-      opacity: 1;
-      -webkit-filter: grayscale(0%);
-  } */
+        filter: grayscale(90%);
+        opacity: 0.7;
+        transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+        -webkit-filter: grayscale(90%);
+    }
+    .brand-img:hover img {
+        filter: grayscale(0%);
+        opacity: 1;
+        -webkit-filter: grayscale(0%);
+    } */
   /* 
-   ask section */
+     ask section */
   .ask-bg {
     background-color: #2b82a2;
     background-image: url(../img/call-action-bg.png);
@@ -2623,12 +2594,12 @@ Template Name: Insurance -  HTML Template
   }
   
   /*** 
-  
-  ====================================================================
-  Page Title
-  ====================================================================
-  
-  ***/
+    
+    ====================================================================
+    Page Title
+    ====================================================================
+    
+    ***/
   .title-outer {
     position: relative;
     z-index: 111;
@@ -2644,11 +2615,7 @@ Template Name: Insurance -  HTML Template
     z-index: 11;
     /* margin-bottom: 100px; */
   }
-  @media only screen and (max-width: 768px) {
-    .page-title {
-      padding: 150px 0 110px;
-    }
-  }
+  
   .page-title:before {
     position: absolute;
     left: 0;
@@ -2961,12 +2928,12 @@ Template Name: Insurance -  HTML Template
   }
   
   /*** 
-  
-  ====================================================================
-    Contact Section
-  ====================================================================
-  
-  ***/
+    
+    ====================================================================
+      Contact Section
+    ====================================================================
+    
+    ***/
   
   .contact-form {
     position: relative;
@@ -3216,10 +3183,10 @@ Template Name: Insurance -  HTML Template
     color: #fff;
   }
   /* .socail-share-wrapper{
-      position: sticky;
-      top: 100px;
-      padding-left: 15px;
-  } */
+        position: sticky;
+        top: 100px;
+        padding-left: 15px;
+    } */
   .social-share-link {
     padding: 0;
     margin: 0;
@@ -3440,12 +3407,12 @@ Template Name: Insurance -  HTML Template
   }
   
   /*** 
-  
-  ====================================================================
-      News Section
-  ====================================================================
-  
-  ***/
+    
+    ====================================================================
+        News Section
+    ====================================================================
+    
+    ***/
   
   .blog-one {
     /* padding-top: 100px; */
@@ -3935,11 +3902,11 @@ Template Name: Insurance -  HTML Template
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-}
+  }
   /*** 
-  /*
-  * 22. sidebar style
-  */
+    /*
+    * 22. sidebar style
+    */
   .sidebar__search {
     position: relative;
   }
@@ -4186,6 +4153,20 @@ Template Name: Insurance -  HTML Template
     color: var(--theme-color2);
     border-color: var(--theme-color2);
   }
+  @media only screen and (min-width: 991px) and (max-width: 1199px) {
+    .header-btn {
+      margin-right: 25px;
+    }
+  
+    .main-menu ul li {
+      display: inline-block;
+      margin-left: 20px;
+      position: relative;
+    }
+    .menu-area .s-btn {
+      padding: 15px 25px;
+    }
+  }
   
   @media only screen and (min-width: 320px) and (max-width: 1199px) {
     .slider-one__title {
@@ -4283,8 +4264,23 @@ Template Name: Insurance -  HTML Template
       margin-bottom: 9px;
     }
   }
-  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-btn {
+      margin-top: 0;
+      margin-right: 40px;
+    }
+  }
   @media only screen and (min-width: 320px) and (max-width: 991px) {
+    .menu-area-two {
+      background: #121121;
+      padding: 15px 0px;
+    }
+    .info-toggle-btn.sidebar-toggle-btn {
+      top: 0px;
+    }
+    .header-transparent .header-btn {
+      margin-top: 0px;
+    }
     .link-box {
       flex-direction: column;
     }
@@ -4311,6 +4307,9 @@ Template Name: Insurance -  HTML Template
       font-size: 14px;
       min-width: 100px;
       padding: 8px;
+    }
+    .page-title {
+      padding: 150px 0 110px;
     }
   }
   
