@@ -2232,6 +2232,7 @@ select {
  justify-content: space-between;
  align-items: center;
  gap: 10px;
+ overflow: hidden;
 }
 .ask-bg h4{
     text-align: left;
@@ -2417,6 +2418,9 @@ select {
     transition: all 500ms ease;
     padding: 15px 20px;
   }
+  .accordion-box .block .acc-btn p{
+    max-width: 90%;
+   }
   
   .accordion-box .block .acc-btn .icon {
     position: absolute;
@@ -4254,12 +4258,12 @@ transform: translateY(-50%) translateX(0px);
         margin-bottom: 15px;
     }
     .tab-menu-wrapper{
-        padding: 0;
+        padding: 15px 10px;
     }
     .tab-menu-wrapper .nav-link {
         font-size: 14px;
         margin: 0px 8px 0px 0px;
-        min-width: 130px;
+        min-width: 100px;
     }
     .info-btn .icon {
         height: 45px;
@@ -4308,9 +4312,17 @@ transform: translateY(-50%) translateX(0px);
         line-height: 30px;
         margin: 0px 0px 10px 0px !important;
     }
+    .accordion-box .block .acc-btn {
+        font-size: 16px;
+    }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     .link-box {
         flex-direction: column;
+    }
+    .tab-menu-wrapper .nav-link {
+        font-size: 14px;
+        min-width: 100px;
+        padding: 8px;
     }
 }
