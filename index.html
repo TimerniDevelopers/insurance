@@ -1515,19 +1515,24 @@
         </div>
     </footer>
     <!-- Jquery JS Link -->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- Bootstrap JS Link -->
-    <script src="assets/js/popper.min.js"></script>
-    <!-- carousel slider JS -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.meanmenu.min.js"></script>
-    <script src="assets/js/backtotop.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/counterup.min.js"></script>
-    <!-- Custom JS Link -->
-    <script src="assets/js/custom.js"></script>
+   <!-- Load jQuery first (from CDN with local fallback) -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-..." crossorigin="anonymous" defer>
+   </script>
+   <script>
+       window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>');
+   </script>
+
+   <!-- Load plugins and custom scripts with defer to avoid blocking HTML rendering -->
+   <script src="assets/js/popper.min.js" defer></script>
+   <script src="assets/js/bootstrap.min.js" defer></script>
+   <script src="assets/js/owl.carousel.min.js" defer></script>
+   <script src="assets/js/jquery.magnific-popup.min.js" defer></script>
+   <script src="assets/js/jquery.meanmenu.min.js" defer></script>
+   <script src="assets/js/backtotop.js" defer></script>
+   <script src="assets/js/waypoints.min.js" defer></script>
+   <script src="assets/js/counterup.min.js" defer></script>
+   <script src="assets/js/custom.js" defer></script>
+
 </body>
 
 </html>
